@@ -1,0 +1,11 @@
+#PAGES
+menu:
+  login: Zaloguj
+  find: Szukaj
+  about: o nas
+  contact: kontakt
+  
+
+#COMMING
+comming:
+  title: Cześć!

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+body { 
+}
+.theme-light {
+    --text-main-collor: #303030;
+    --text-pointer-collor: #cf3636;
+    --bg-hover-color: #e7e7e7;
+    --white: #ffffff;
+    --main-list-bg-color: #ececec;
+  }
+  .theme-dark {
+    --text-main-collor: #bebebe;
+    --text-pointer-collor: #a84a4a;
+    --bg-hover-color: #e7e7e7;
+    --white: #ffffff;
+    --main-list-bg-color: #272727;
+  }
+
+.menu {
+    width: 100%;
+    height: 20%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+}
+
+.menu .logozone {
+    width: 80%;
+    /* background-color: rgb(71, 71, 71); */
+    height: 125px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.menu .logozone .inner {
+    float: left;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu .logozone .left .center {
+    margin: auto;
+    /* border: 3px solid #73AD21; */
+    height: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.menu .logozone .left .button {
+    float: left;
+    width: 25%;
+    height: 50%;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu .logozone .left .button a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-main-collor);
+}
+
+.menu .logozone .left .button span:hover {
+    text-decoration: none;
+    color: var(--text-pointer-collor);
+    background-color: var(--bg-hover-color);
+}
+
+.menu .logozone .right .center {
+    margin: auto;
+    /* border: 3px solid #73AD21; */
+    height: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header .left ul {
+    padding: 7px;
+    margin: 0;
+}
+
+header .left ul li {
+    float: left;
+}
+
+header .right ul li {
+    float: right;
+}
+
+header .left ul li {
+    padding: 0;
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+header .left ul li {
+    border: 0!important;
+}
+
+header .left ul li:first-child {
+    padding: 0;
+    border-left: 1px solid #e6e6e6;
+}
+
+header .left a {
+    text-transform: uppercase;
+    padding: 0 12px;
+    display: block;
+    line-height: 43px;
+    /* font-family: lato, san-serif; */
+}
+
+header .left a {
+    color: var(--text-main-collor);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+header .left a:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+}
+
+header .right ul {
+    padding: 7px;
+    margin: 0;
+}
+
+header .right ul li {
+    float: right;
+}
+
+header .right ul li {
+    padding: 0;
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+header .right ul li {
+    border: 0!important;
+}
+
+header .right ul li:first-child {
+    padding: 0;
+    border-left: 1px solid #e6e6e6;
+}
+
+header .right a {
+    text-transform: uppercase;
+    padding: 0 12px;
+    display: block;
+    line-height: 43px;
+    /* font-family: lato, san-serif; */
+}
+
+header .right a {
+    color: var(--text-main-collor);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+header .right a:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+}
+
+.menu .logozone .middle .img-responsive {
+    display: block;
+    width: 65%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.menu .menuzone {
+    width: 100%;
+    background-color: var(--main-list-bg-color);
+    /* height: 25%; */
+}
+
+header .menuzone .table {
+    display: table;
+    margin: 0 auto;
+}
+
+header .menuzone ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+header .menuzone ul li {
+    display: inline-block;
+}
+
+header .menuzone a {
+    text-transform: uppercase;
+    padding: 0 12px;
+    display: block;
+    line-height: 43px;
+    /* font-family: lato, san-serif; */
+}
+
+header .menuzone a {
+    color: var(--text-main-collor);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header .menuzone .sale{
+    color: var(--text-pointer-collor);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+
+header .menuzone a:hover {
+    /* background: #f2f2f2; */
+    text-decoration: none;
+    color: var(--text-pointer-collor);
+    border-bottom: 3px var(--text-pointer-collor) solid;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: slideInDown;
+    z-index: 999;
+}
+
+
+.menu h1 {
+    color: var(--font-color);
+    font-family: sans-serif;
+  }
+  .menu button {
+    color: var(--font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+  }
+  
+  /* The switch - the box around the slider */
+  .switch {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  input:checked + .slider {
+    background-color: #a1a1a1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #a1a1a1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+

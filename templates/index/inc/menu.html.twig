@@ -1,0 +1,82 @@
+
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('menu') }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ encore_entry_script_tags('menu') }}
+{% endblock %}
+<header>
+	<div class='menu'>
+		<label id="switch" class="switch">
+            <input type="checkbox" id="slider">
+            <span class="slider round"></span>
+        </label>
+		<div class='logozone container'>
+		
+			<div class='inner left'>
+				<div class='center'>
+					<ul class="btn-list">
+						<li class="hidden-sm">
+							<a href="/o-nas" title="">{{ 'menu.about'|trans }}</a>
+						</li>
+						<li>
+							<a href="/kontakt" title="">{{ 'menu.contact'|trans }}</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class='inner middle'>
+				<a href="/" title=""><img src="/img/logo.png" alt="" class="img-responsive"></a>
+			</div>
+			<div class='inner right'>
+				<div class='center'>
+					<ul class="btn-list">
+						<li class="hidden-sm">
+							<a href="/o-nas" title="">{{ 'menu.find'|trans }}</a>
+						</li>
+						<li>
+							<a href="/kontakt" title="">{{ 'menu.login'|trans }}</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class='menuzone' id='menus'>
+		
+			<div class='container'>
+			 <div class="table">
+				<ul class='menu-list'>
+					<li>
+						<a href="/o-nas" title="">Kat 1</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Kat 2</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Katedra 3</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Kat 4</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Kat 5</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Kat 6</a>
+					</li>
+					<li>
+						<a href="/o-nas" title="">Kat 7</a>
+					</li>
+					<li>
+						<a class='sale' href="/o-nas" title="">Sale</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+</header>

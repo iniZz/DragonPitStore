@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DragonPit Store |
+	{{ category.name }}
+{% endblock %}
+
+{% block body %}
+	<div class='page'>
+		{% include "index/inc/menu.html.twig" %}
+
+		<section>
+			{{ category.name }}\n
+		</section>
+
+
+	</div>
+
+
+	{% include "index/inc/footer.html.twig" %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+<div class='page'>
+{% include "index/inc/menu.html.twig" %}
+{{ form_start(form) }}
+    {# ... #}
+
+{{ form_end(form) }}
+</div>
+
+
+{% include "index/inc/footer.html.twig" %}
+{% endblock %}

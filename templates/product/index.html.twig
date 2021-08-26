@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DragonPit Store |
+	{{ product.name }}
+{% endblock %}
+
+{% block body %}
+	<div class='page'>
+		{% include "index/inc/menu.html.twig" %}
+
+		<section>
+			<div class="page-show container">
+				<div class="row">
+					<div class="columns">
+						<div class="column is-6-desktop">
+							<div
+								class="img-container">
+								{# <span onclick="this.parentElement.style.display='none'" class="img-closebtn">&times;</span> #}
+								<img
+								src="https://cdn.shoplo.com/4326/products/th2048/aaaw/5558-ppro7865-1.jpg" id="expandedImg">
+							{# <div id="imgtext"></div> #}
+							</div>
+							<div class="img-row">
+								<div class="img-column">
+									<img src="https://cdn.shoplo.com/4326/products/th2048/aaaw/5558-ppro7865-1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://image.shutterstock.com/image-photo/closeup-female-hands-mug-beverage-600w-1059427853.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://cdn.shoplo.com/4326/products/th2048/aaaw/5558-ppro7865-1.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://i.pinimg.com/originals/39/fe/a7/39fea76d74a1b9c48d0c455f7d9ec27b.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://image.shutterstock.com/image-photo/closeup-female-hands-mug-beverage-600w-1059427853.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://images.wallpaperscraft.com/image/starry_sky_clouds_sunset_120716_1920x1080.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+								</div>
+								<div class="img-column">
+									<img src="https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="Snow" style="width:100%" onclick="myFunction(this);">
+								</div>
+							</div>
+
+
+						</div>
+						<div class="column is-6-desktop" style="border-left: black 1px solid;">
+							<nav data-cy="breadcrumbs" class="breadcrumb " aria-label="breadcrumbs">
+								<ul class="breadcrumbs" vocab="https://schema.org" typeof="BreadcrumbList">
+									<li property="itemListElement" typeof="ListItem">
+										<a property="item" typeof="WebPage" href="{{ path('index') }}">sklep</a>
+										<meta property="position" content="1">
+										<meta property="name" content="sklep">
+									</li>
+									<li property="itemListElement" typeof="ListItem">
+										<a property="item" typeof="webPage" href="{{ path('category', {_locale: 'pl',code: category.code}) }}">{{ category.name }}</a>
+										<meta property="position" content="2">
+										<meta property="name" content="HYPNO+PLSPY">
+									</li>
+									<li class="is-active" property="itemListElement" typeof="listItem">
+										<span aria-current="page">{{ product.name }}</span>
+										<meta property="position" content="3">
+										<meta property="name" content="BLUZA " hypnotized"=" " "="">
+									</li>
+								</ul>
+							</nav>
+							{{ product.name }}\n
+							{{ category.name }}\n
+							{{ product.price }}\n
+							{{ product.description }}\n
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+
+	{% include "index/inc/footer.html.twig" %}
+{% endblock %}
+{% block javascripts %}
+	<script>
+		function myFunction(imgs) {
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+expandImg.src = imgs.src;
+}
+	</script>
+{% endblock %}
